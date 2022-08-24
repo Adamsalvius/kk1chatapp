@@ -28,7 +28,7 @@ function delMessages(room) {
   };
 
 function roomMessages(roomName) {
-  const sql = "SELECT * FROM message WHERE room = ?";
+  const sql = "SELECT * FROM message WHERE room = $1";
 
   return db.query(sql, roomName, (err, rows) => {
       if (err) {

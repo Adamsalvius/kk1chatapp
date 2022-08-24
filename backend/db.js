@@ -20,6 +20,7 @@ const db = new Client( {
       rejectUnauthorized: false
     },
     connectionString: process.env.DATABASE_URL 
+    /* 8b15468b-5cfc-4bc4-b78f-4b14c636ebb0 */
     // Heroku lägger till ENV-variablen DATABASE_URL när du 
     // lägger till Heroku Postgres som addon till din app
   });
