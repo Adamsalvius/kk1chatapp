@@ -1,5 +1,5 @@
 const { Server } = require("socket.io");
-const PORT = 4000;
+const PORT = process.env.PORT;
 const fs = require("fs");
 
 
@@ -8,7 +8,7 @@ const messagesModel = require("./models/message.model");
 
 const io = new Server({
   cors: {
-    origin: "*",
+    origin: ["*", "http://localhost:3000", "https://frontendkk1.herokuapp.com/"],
     methods: ["GET", "POST", "DELETE"],
   },
 });
