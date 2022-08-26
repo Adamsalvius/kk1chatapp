@@ -8,7 +8,7 @@ const messagesModel = require("./models/message.model");
 
 const io = new Server({
   cors: {
-    origin: ["*", "http://localhost:3000", "https://frontendkk1.herokuapp.com/"],
+    origin: ["https://frontendkk1.herokuapp.com/"],
     methods: ["GET", "POST", "DELETE"],
   },
 });
